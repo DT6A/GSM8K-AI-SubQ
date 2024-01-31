@@ -73,7 +73,7 @@ used to convert shards into the proper evaluation format.
 python3 convert_chat_test.py \\ 
     --n_shards=[number_of_shards_to_merge] \\
     --load_dir=[path_to_answers_shards] \\
-    --save_dir=[save_directory] \\
+    --save_dir=[save_directory]
 ```
 It will save the file into the given directory with `test_chat.jsonl` name, see 
 [test_chat.jsonl](https://github.com/DT6A/GSM8k-AI-SubQ/blob/main/dataset/test_chat.jsonl).
@@ -91,7 +91,7 @@ OPENAI_API_KEY=<your_key> python3 chatgpt_run_test.py \\
     --parallel_queries=[number_of_parallel_API_calls] \\
     --load_dir=[path_to_subquestions_shards] \\
     --load_name=[name_of_the_file_to_load] \\
-    --save_dir=[save_dir_name]
+    --save_dir=[save_dir_name] \\
     --save_name=[name_of_the_resulting_file]
 ```
 
@@ -104,6 +104,6 @@ python3 llm_run_test.py \\
     --model_path=[path_to_huggingface_checkpoint_directory] \\
     --load_dir=[path_to_subquestions_shards] \\
     --load_name=[name_of_the_file_to_load] \\
-    --save_dir=[save_dir_name]
+    --save_dir=[save_dir_name] \\
     --save_name=[name_of_the_resulting_file]
 ```
