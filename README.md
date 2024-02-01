@@ -12,6 +12,10 @@ For more details see our work "Distilling LLMs' Decomposition Abilities into Com
 
 ## Repository structure
 Each of the directories contains README.md with relevant instructions and comments.
+All the requirements can be installed with
+```commandline
+python3 -m pip install -r requirements.txt
+```
 * [baselines](https://github.com/DT6A/GSM8k-AI-SubQ/blob/main/baselines) contains the scripts of baseline algorithms: Behavioral Cloning (BC), Filtered BC and ILQL.
 * [data_generation_and_evaluation](https://github.com/DT6A/GSM8k-AI-SubQ/blob/main/data_generation_and_evaluation) contains the scripts and data required for the generation of the dataset and scripts for evaluation of results.
 * [dataset](https://github.com/DT6A/GSM8k-AI-SubQ/blob/main/dataset) contains the GSM8K-AI-SubQ dataset.
