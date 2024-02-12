@@ -1,4 +1,6 @@
 # GSM8K-AI-SubQ
+[![arXiv](https://img.shields.io/badge/arXiv-2402.01812-b31b1b.svg)](https://arxiv.org/abs/2402.01812)
+
 This repository contains GSM8K-AI-SubQ dataset, scripts for its collection and scripts for baselines.
 
 The dataset was created to conduct research in the direction of distillation of LLMs reasoning abilities,
@@ -8,7 +10,7 @@ includes examples of ChatGPT problems decomposition and its own feedback on gene
 Our data also includes ChatGPT's answers for sub-questions, but we didn't conduct any experiments for this part of reasoning. 
 We hope that our dataset will help further advancements of offline RL algorithms in the area of reasoning.
 
-For more details see our work "Distilling LLMs' Decomposition Abilities into Compact Language Models".
+For more details see our work ["Distilling LLMs' Decomposition Abilities into Compact Language Models"](https://arxiv.org/abs/2402.01812).
 
 ## Repository structure
 Each of the directories contains README.md with relevant instructions and comments.
@@ -67,3 +69,14 @@ python3 -m pip install -r requirements.txt
 | ILQL-sparse | 0.249      | 0.281       | 0.310        | 0.280   | 
 | ILQL-full   | 0.253      | 0.277       | 0.309        | 0.280   |
 | ChatGPT     | -          | -           | -            | 0.429   |
+
+## Citing
+If you use our work in your research, please use the following bibtex
+```bibtex
+@article{tarasov2024distilling,
+  title={Distilling LLMs' Decomposition Abilities into Compact Language Models},
+  author={Tarasov, Denis and Shridhar, Kumar},
+  journal={arXiv preprint arXiv:2402.01812},
+  year={2024}
+}
+```
