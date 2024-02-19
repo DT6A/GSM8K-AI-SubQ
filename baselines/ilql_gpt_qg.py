@@ -202,8 +202,8 @@ def main(rank=0, world_size=1):
     tokenizer = GPT2Tokenizer.from_pretrained(args.tokenizer_path)
     config = GPT2Config.from_pretrained(args.tokenizer_path)
 
-    _, valid_examples = question_generation(args.dataset_dir, "train", train_frac=0.99)
-    train_examples = generated_subques(f"{args.dataset_dir}/qg_train_dataset.jsonl")
+    tmp, valid_examples = question_generation(args.dataset_dir, "train", train_frac=0.99)
+    train_examples = generated_subques(f"{args.dataset_dir}/qg_train_dataset.jsonl")[:len(tmp)]
     train_dset = GSMIQLDatasetQG(tokenizer, train_examples, loss_on_prefix=True, world_size=world_size, rank=rank, train_frac=0.99, tokens_limit=args.tokens_limit, sparse=args.sparse, seq_reward_mult=args.reward_mult, full_sparse=args.full_sparse)
     valid_dset = GSMDataset(tokenizer, valid_examples, loss_on_prefix=True)
 
