@@ -57,8 +57,8 @@ python3 -m pip install -r requirements.txt
 |-------------|------------|-------------|--------------|---------|
 | BC          | 0.240      | 0.264       | 0.290        | 0.265   | 
 | Filtered BC | 0.228      | 0.256       | 0.293        | 0.259   | 
-| ILQL-sparse | 0.219      | 0.261       | 0.288        | 0.256   | 
-| ILQL-full   | 0.231      | 0.252       | 0.280        | 0.254   | 
+| ILQL-sparse | 0.223      | 0.253       | 0.288        | 0.255   | 
+| ILQL-full   | 0.235      | 0.252       | 0.282        | 0.256   | 
 | ChatGPT     | -          | -           | -            | 0.446   |
 
 ### Average among sub-question answerers
